@@ -17,6 +17,9 @@ class Elevator:
 
   def go_to_floor(self, floor: int):
     while(self.curr_floor != floor):
+      if floor > self.top or floor < self.bottom:
+        print(f"Floor {floor} does not exist")
+        break
       if self.curr_floor < floor:
         self.floor_up()
       elif self.curr_floor > floor:

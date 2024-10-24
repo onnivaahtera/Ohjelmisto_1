@@ -20,6 +20,9 @@ class Elevator:
 
   def go_to_floor(self, floor: int) -> None:
     while(self.curr_floor != floor):
+      if floor > self.top_floor or floor < self.bottom_floor:
+        print(f"Floor {floor} does not exist")
+        break
       if self.curr_floor < floor:
         self.floor_up()
       elif self.curr_floor > floor:
