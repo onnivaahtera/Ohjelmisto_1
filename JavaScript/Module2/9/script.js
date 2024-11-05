@@ -9,4 +9,5 @@ const even = (arr) => {
 };
 
 const nums = [2, 7, 4, 8, 6, 5];
+console.log(nums);
 console.log(even(nums));
