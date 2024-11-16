@@ -1,9 +1,9 @@
-//const num = parseInt(prompt("Number of participants"));
-const arr = ["Apina", "Kala", "Banaani", "Maito", "Cipuli"].sort();
+const num = parseInt(prompt("Number of participants"));
+const arr = [].sort();
 
-/* for (let i = 1; i <= num; i++) {
+for (let i = 1; i <= num; i++) {
 	arr.push(prompt(`Name of participant ${i}: `));
-} */
+}
 const ol = document.querySelector("#target");
 arr.map((i) => {
 	const li = document.createElement("li");
