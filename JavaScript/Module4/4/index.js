@@ -17,6 +17,11 @@ form.addEventListener("submit", async (event) => {
 		url.target = "_blank";
 		url.innerHTML = value.show.url;
 		url.href = value.show.url;
+
+		value.show.image?.medium
+			? (img.src = value.show.image.medium)
+			: (img.src = "https://via.placeholder.com/210x295?text=Not%20Found");
+
 		img.src = value.show.image?.medium;
 		img.alt = value.show.name;
 		sum.innerHTML = value.show.summary;
